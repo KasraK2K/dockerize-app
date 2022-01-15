@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    const element = document.getElementById('root');
+    const ul = document.createElement('ul');
+
+    // fetch data from backend
+    fetch('http://localhost:3000/', { method: 'POST', mode: 'cors' })
+      .then(response => response.json())
+      .then(data => {
+        for(item of data) {
+          const li = document.createElement('li');
+          li.innerHTML = `no: ${item.no}, name: ${item.name}, age: ${item.age}`;
+          ul.appendChild(li);
+        }
+        element.appendChild(ul);
+      });
+  </script>
+</body>
+</html>
