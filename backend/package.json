@@ -4,7 +4,7 @@
   "description": "Simple Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js -e .js,.html,.json"
   },
   "keywords": [],
   "author": "Kasra Karami <Kasra.Karami@outlook.com>",

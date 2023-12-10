@@ -11,6 +11,8 @@ app.post("/", function (req, res) {
     { no: 1, name: "Alex", age: 20 },
     { no: 2, name: "Bob", age: 30 },
     { no: 3, name: "Cindy", age: 40 },
+    { no: 4, name: "Amy", age: 25 },
+    { no: 5, name: "Andy", age: 35 },
   ];
 
   return res.json(list);

@@ -4,7 +4,7 @@
   "description": "Simple frontend",
   "main": "client.js",
   "scripts": {
-    "start": "node client.js"
+    "start": "nodemon client.js -e .js,.html,.json"
   },
   "keywords": [],
   "author": "Kasra Karami <Kasra.Karami@outlook.com>",
