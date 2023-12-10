@@ -1,4 +1,4 @@
-FROM node
+FROM node:lts-hydrogen
 
 WORKDIR /app/frontend/
 
